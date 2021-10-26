@@ -280,11 +280,7 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 
 ##### Bloco 37: Estrutura de Dados II: Listas, Filas e Pilhas
 
-<<<<<<< HEAD
 - [ ] 37-1: _Nó e Listas Encadeadas_
 - [ ] 37-2: _Deque_
 - [ ] 37-3: _Pilhas_
 - [ ] 37-4: _[Projeto - TING (Trybe Is Not Google)]()_
-=======
-# [...]
->>>>>>> eb6b9c50a3ab4d06417299b58207eb4d6bfa78e4
