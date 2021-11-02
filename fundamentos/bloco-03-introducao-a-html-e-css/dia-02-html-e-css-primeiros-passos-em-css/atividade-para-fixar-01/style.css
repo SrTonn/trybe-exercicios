@@ -1,0 +1,16 @@
+body {
+  background-color: teal;
+}
+
+h1 {
+  font-size: 65px;
+  color: orange;
+}
+
+ul {
+  background-color: rgb(0, 192, 192);
+}
+
+p, ul {
+  background-color: rgb(161, 116, 31);
+}
