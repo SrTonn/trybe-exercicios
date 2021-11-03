@@ -1,0 +1,75 @@
+ol li {
+  background-color: yellow;
+}
+
+ol li:nth-child(even) {
+  color: green;
+}
+
+ol li:nth-child(odd) {
+  color: red;
+  text-transform: uppercase;
+}
+
+h1, h2 {
+  color: red;
+}
+
+h1 em {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+li {
+  font-size: 20px;
+}
+
+li em {
+  font-weight: bold;
+}
+
+.java {
+  background-color: pink;
+}
+
+.listaLinguagens li:nth-child(-n + 3) {
+  color: blue;
+}
+
+.listaLinguagens::target-text {
+  background-color: teal;
+}
+
+.sites li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sites li:hover {
+  text-decoration: underline;
+}
+
+/* StackOverflow */
+.sites li:first-child:hover {
+  color: orange;
+}
+
+/* W3Scholl */
+.sites li:nth-child(2):hover {
+  color: green;
+}
+
+/* MDN Web Docs */
+.sites li:nth-child(3):hover {
+  color: rgb(17, 16, 16);
+}
+
+/* DevDocs */
+.sites li:nth-child(4):hover {
+  color: yellow;
+}
+
+/* Trybe */
+.sites li:last-child:hover {
+  color: green;
+}
