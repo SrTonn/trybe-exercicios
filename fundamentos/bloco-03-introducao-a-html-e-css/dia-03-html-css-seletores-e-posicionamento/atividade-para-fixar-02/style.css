@@ -1,0 +1,39 @@
+body {
+  background-color: teal;
+}
+
+ol, ul {
+  margin: 0 auto;
+  /* margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto; */
+  width: 200px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+ol:hover {
+  border-radius: 4px;
+  background-color: #7C898B;
+}
+
+li:hover {
+  font-weight: 600;
+}
+
+li:active {
+  font-family: monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a::after {
+  text-decoration: inherit;
+  color: inherit;
+}
