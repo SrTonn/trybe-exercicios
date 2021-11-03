@@ -12,10 +12,20 @@
       body {
         background-color: teal;
         line-height: 40px;
-        margin: 0 15em;
+        margin: 0 10%;
       }
       h1 {
         padding: 25px;
+      }
+      .friendList {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      .borderRadius {
+        border-radius: 4px;
+      }
+      .noStyleLink {
+        color: rgb(163, 160, 160);
       }
       a > img {
         width: 35px;
@@ -44,8 +54,11 @@
         white-space: pre;
       }
       ol > li {
-        font-size: 1.17em;
+        font-size: 1.3em;
         font-weight: bold;
+        /* line-height: 60px; */
+        margin-bottom: 5px;
+        /* background-color: red; */
       }
 
     </style>
@@ -56,87 +69,89 @@
     <ol class="text-center">
       <li>Crie uma lista das pessoas que você já fez amizade na Trybe.</li>
 
-      <ul type="none">
-        <li>
-          <div>
-            <a href="https://github.com/brenndha-cabral">
-              <img src="https://github.com/brenndha-cabral.png" alt="Brenndha foto">
-            </a>
-            <span>Brenndha Cabral</span>
-          </div>
-        </li>
-          
-        <li>
-          <div>
-            <a href="https://github.com/rayssa-aguiar">
-              <img src="https://github.com/rayssa-aguiar.png" alt="Camila foto">
-            </a>
-            <span>Camila Oliveira</span>
-          </div>
-        </li>
-        <li>
-          <div>
-            <a href="https://github.com/EFMerscher">
-              <img src="https://github.com/EFMerscher.png" alt="Ed foto">
-            </a>
-            <span>Ed</span>
-          </div>
-        </li>
-        <li>
-          <div>
-            <a href="https://github.com/leonardoVogel">
-              <img src="https://github.com/leonardoVogel.png" alt="Leonardo foto">
-            </a>
-            <span>Leonardo Voguel</span>
-          </div>
-        </li>
-        <li>
-          <div>
-            <a href="https://github.com/byancaknorst">
-              <img src="https://github.com/byancaknorst.png" alt="Byanca foto">
-            </a>
-            <span>Byanca Knorst</span>
-          </div>
-        </li>
-        <li>
-          <div>
-            <a href="https://github.com/brunoro7">
-              <img src="https://github.com/brunoro7.png" alt="Bruno foto">
-            </a>
-            <span>Bruno Rossetti</span>
-          </div>
-        </li>
-        <li>
-          <div>
-            <a href="https://github.com/KesleyMuniz">
-              <img src="https://github.com/KesleyMuniz.png" alt="Kesley foto">
-            </a>
-            <span>Kesley Muniz</span>
-          </div>
-        </li>
-        <li>
-          <div>
-            <a href="https://github.com/brucealberto">
-              <img src="https://github.com/brucealberto.png" alt="Bruce foto">
-            </a>
-            <span>Bruce Alberto</span>
-          </div>
-        </li>
-        <li>
-          <div>
-            <a href="https://github.com/missias1">
-              <img src="https://github.com/missias1.png" alt="Leticia Missias">
-            </a>
-            <span>Leticia Missias</span>
-          </div>
-        </li>
-      </ul>
+      <div class="friendList">
+        <ul type="none">
+          <li>
+            <div>
+              <a href="https://github.com/brenndha-cabral">
+                <img src="https://github.com/brenndha-cabral.png" alt="Brenndha foto">
+              </a>
+              <span>Brenndha Cabral</span>
+            </div>
+          </li>
+            
+          <li>
+            <div>
+              <a href="https://github.com/rayssa-aguiar">
+                <img src="https://github.com/rayssa-aguiar.png" alt="Camila foto">
+              </a>
+              <span>Camila Oliveira</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="https://github.com/EFMerscher">
+                <img src="https://github.com/EFMerscher.png" alt="Ed foto">
+              </a>
+              <span>Ed</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="https://github.com/leonardoVogel">
+                <img src="https://github.com/leonardoVogel.png" alt="Leonardo foto">
+              </a>
+              <span>Leonardo Voguel</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="https://github.com/byancaknorst">
+                <img src="https://github.com/byancaknorst.png" alt="Byanca foto">
+              </a>
+              <span>Byanca Knorst</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="https://github.com/brunoro7">
+                <img src="https://github.com/brunoro7.png" alt="Bruno foto">
+              </a>
+              <span>Bruno Rossetti</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="https://github.com/KesleyMuniz">
+                <img src="https://github.com/KesleyMuniz.png" alt="Kesley foto">
+              </a>
+              <span>Kesley Muniz</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="https://github.com/brucealberto">
+                <img src="https://github.com/brucealberto.png" alt="Bruce foto">
+              </a>
+              <span>Bruce Alberto</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="https://github.com/missias1">
+                <img src="https://github.com/missias1.png" alt="Leticia Missias">
+              </a>
+              <span>Leticia Missias</span>
+            </div>
+          </li>
+        </ul>
+      </div>
 
       <li>Adicione uma imagem que venha de uma URL externa.</li>
 
-      <img src="https://www.cidademarketing.com.br/marketing/wp-content/uploads/2021/08/trybe_xp_inc.jpg" alt="">
+      <img class="borderRadius" src="https://www.cidademarketing.com.br/marketing/wp-content/uploads/2021/08/trybe_xp_inc.jpg" alt="trybe & XP inc">
       <li>Crie um link para a página do Google.</li>
-      &#x1F517; <a href="https://google.com">Link para página do google</a>
+      &#x1F517; <a class="noStyleLink" href="https://google.com">Link para página do google</a>
     </ol>
   </body>
 </html>
