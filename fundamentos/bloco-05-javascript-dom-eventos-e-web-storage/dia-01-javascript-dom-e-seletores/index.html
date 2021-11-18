@@ -48,7 +48,7 @@
         - document.getElementsByClassName()
         - document.getElementsByTagName()
           Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)✅
-          Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+          Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).✅
           Crie uma função que mude a cor do quadrado vermelho para branco.
           Crie uma função que corrija o texto da tag <h1>.
           Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
@@ -59,6 +59,13 @@
           tag[position].innerText = newText
         }
         changeText('p', 'Daqui a 2 anos eu me vejo trabalhando na XP Inc.')
+
+        function changeColor(className, newColor, position = 0) {
+          const tag = document.getElementsByClassName(className)
+          console.log(tag)
+          tag[position].style.backgroundColor = newColor
+        }
+        changeColor('main-content', 'rgb(76,164,109)')
     </script>
   </body>
 </html>
