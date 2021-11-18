@@ -68,6 +68,13 @@
         changeColor('main-content', 'rgb(76,164,109)')
         changeColor('center-content', 'white')
         changeText('h1', 'Exercício 5.1 - JavaScript')
+
+        function textToUpperCase(tagName, position = 0) {
+          const tag = document.getElementsByTagName(tagName)
+          const textUpperCase = tag[0].textContent.toUpperCase()
+          tag[position].innerText = textUpperCase
+        }
+        textToUpperCase('p')
     </script>
   </body>
 </html>
