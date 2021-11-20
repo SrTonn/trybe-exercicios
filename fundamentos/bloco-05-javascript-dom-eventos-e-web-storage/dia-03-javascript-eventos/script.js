@@ -35,3 +35,13 @@ function createDaysOfTheDecember() {
   }
 }
 createDaysOfTheDecember()
+
+function createButton(str, id) {
+  const div = document.getElementsByClassName('buttons-container')[0]
+  const btn = document.createElement('button')
+
+  btn.id = id
+  btn.innerHTML = str
+  div.appendChild(btn)
+}
+createButton('Feriados', 'btn-holiday')
