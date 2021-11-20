@@ -28,7 +28,7 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [x] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [x] 3-4: _HTML Semântico_
-- [ ] 3-5: _[Projeto - Lessons Learned]()_
+- [x] 3-5: _[Projeto - Lessons Learned]()_
 
 ##### Bloco 4: Introdução à JavaScript e Lógica de Programação
 
@@ -42,7 +42,7 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 ##### Bloco 5: JavaScrip: DOM, Eventos e Web Storage
 
 - [x] 5-1: _JavaScript - DOM e seletores_
-- [ ] 5-2: _JavaScript - Trabalhando com elementos_
+- [x] 5-2: _JavaScript - Trabalhando com elementos_
 - [ ] 5-3: _JavaScript - Eventos_
 - [ ] 5-4: _JavaScript - Web Storage_
 - [ ] 5-5: _Fundamentos - JavaScript - Projetos_
