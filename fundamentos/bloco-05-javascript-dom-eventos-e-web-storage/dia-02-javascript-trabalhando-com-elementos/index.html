@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const tagBody = document.body
+      const tagH1 = document.createElement('h1')
+      tagH1.innerText = 'Exercício 5.2 - JavaScript DOM'
+      tagBody.appendChild(tagH1)
+
+      const tagMain = document.createElement('main')
+      tagMain.className = 'main-content'
+      tagBody.appendChild(tagMain)
+
+      const tagSection = document.createElement('section')
+      tagSection.className = 'center-content'
+      tagMain.appendChild(tagSection)
+
+      const tagP = document.createElement('p')
+      tagP.innerText = 'Perder para a razão, sempre é ganhar.'
+      tagSection.appendChild(tagP)
+
+      const tagSection2 = document.createElement('section')
+      tagSection2.className = 'left-content'
+      tagMain.appendChild(tagSection2)
+
+      const tagSection3 = document.createElement('section')
+      tagSection3.className = 'right-content'
+      tagMain.appendChild(tagSection3)
+
+      const tagImg = document.createElement('img')
+      tagImg.src = 'https://picsum.photos/200'
+      tagImg.className = 'small-image'
+      tagSection2.appendChild(tagImg)
+
+      const tagUl = document.createElement('ul')
+      tagUl.innerHTML = `
+      <li>um</li>
+      <li>dois</li>
+      <li>tres</li>
+      <li>quatro</li>
+      <li>cinco</li>
+      <li>seis</li>
+      <li>sete</li>
+      <li>oito</li>
+      <li>nove</li>
+      <li>dez</li>
+      `
+      tagSection3.appendChild(tagUl)
+
+      for (let i = 0; i < 3; i += 1) {
+        const tagH3 = document.createElement('h3')
+        tagMain.appendChild(tagH3)
+      }
+
+      tagH1.className = 'title'
+
+      const tagH3 = document.querySelectorAll('h3')
+      for (let i = 0; i < 3; i += 1) {
+        tagH3[i].className = 'description'
+      }
+
+      tagMain.removeChild(tagSection2)
+
+      tagSection3.style.marginRight = 'auto'
+
+      tagSection.style.backgroundColor = 'green'
+
+      for (let i = 0; i < 2; i++) {
+        const lastElementChild = document.getElementsByTagName('ul')[0].lastElementChild
+        tagUl.removeChild(lastElementChild)
+      }
+    </script>
+  </body>
+</html>
