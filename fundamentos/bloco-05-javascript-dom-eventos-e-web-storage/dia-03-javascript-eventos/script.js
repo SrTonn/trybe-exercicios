@@ -58,3 +58,5 @@ document.getElementById('btn-holiday')
       e.style.color = currentColor === 'white' ? 'rgb(102, 102, 102)' : 'white'
     })
   })
+
+createButton('Sexta-feira', 'btn-friday')
