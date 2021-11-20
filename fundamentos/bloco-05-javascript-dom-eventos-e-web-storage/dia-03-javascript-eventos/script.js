@@ -45,3 +45,16 @@ function createButton(str, id) {
   div.appendChild(btn)
 }
 createButton('Feriados', 'btn-holiday')
+
+document.getElementById('btn-holiday')
+  .addEventListener('click', () => {
+    const holidays = document.querySelectorAll('.holiday')
+    holidays.forEach((e) => {
+      const currentBackgroundColor = e.style.backgroundColor
+      const currentColor = e.style.color
+      e.style.backgroundColor = currentBackgroundColor === 'green'
+                              ? 'rgb(238,238,238)'
+                              : 'green'
+      e.style.color = currentColor === 'white' ? 'rgb(102, 102, 102)' : 'white'
+    })
+  })
