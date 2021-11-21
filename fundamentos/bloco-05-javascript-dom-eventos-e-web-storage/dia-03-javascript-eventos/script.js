@@ -74,8 +74,8 @@ document.getElementById('btn-friday')
 
 document.querySelectorAll('.days').forEach(element => {
   element.addEventListener('mouseover', () => {
-    element.style.cursor = 'default';
-    element.style.transition = 'all 0.4s';
+    element.style.cursor = 'default'
+    element.style.transition = 'all 0.4s'
     element.style.transform = 'scale(1.3)'
   })
 
