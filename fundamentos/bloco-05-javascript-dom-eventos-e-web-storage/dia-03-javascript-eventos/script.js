@@ -60,3 +60,14 @@ document.getElementById('btn-holiday')
   })
 
 createButton('Sexta-feira', 'btn-friday')
+
+document.getElementById('btn-friday')
+  .addEventListener('click', () => {
+    const holidays = document.querySelectorAll('.friday')
+    const fridayList = [4, 11, 18, 25]
+
+    holidays.forEach((e, i) => {
+      const currentText = e.innerHTML
+      e.innerHTML = isNaN(currentText) ? fridayList[i] : 'friday'
+    })
+  })
