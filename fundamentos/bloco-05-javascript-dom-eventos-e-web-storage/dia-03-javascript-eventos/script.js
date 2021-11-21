@@ -104,3 +104,9 @@ function newTaskDiv(color, size) {
   tasksContainer.appendChild(newTask)
 }
 newTaskDiv('green', 23)
+
+document.querySelector('.my-tasks > div')
+  .addEventListener('click', (event) => {
+    console.log(event.target)
+    event.target.classList.toggle('selected')
+  })
