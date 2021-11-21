@@ -87,6 +87,7 @@ document.querySelectorAll('.days').forEach(element => {
 function createTask(nameTag, parentClassName) {
   const myTasks = document.getElementsByClassName(parentClassName)[0]
   const tagP = document.createElement(nameTag)
+  tagP.style.cursor = 'default'
   tagP.innerText = 'Projeto: 🟢'
   myTasks.appendChild(tagP)
 }
