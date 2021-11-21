@@ -83,3 +83,11 @@ document.querySelectorAll('.days').forEach(element => {
     element.style.transform = 'scale(1.0)'
   })
 })
+
+function createTask(nameTag, parentClassName) {
+  const myTasks = document.getElementsByClassName(parentClassName)[0]
+  const tagP = document.createElement(nameTag)
+  tagP.innerText = 'Projeto: 🟢'
+  myTasks.appendChild(tagP)
+}
+createTask('span', 'my-tasks')
