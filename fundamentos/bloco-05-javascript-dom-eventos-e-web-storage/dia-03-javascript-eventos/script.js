@@ -88,7 +88,19 @@ function createTask(nameTag, parentClassName) {
   const myTasks = document.getElementsByClassName(parentClassName)[0]
   const tagP = document.createElement(nameTag)
   tagP.style.cursor = 'default'
-  tagP.innerText = 'Projeto: 🟢'
+  tagP.innerText = 'Projeto:'
   myTasks.appendChild(tagP)
 }
 createTask('span', 'my-tasks')
+
+// Peguei a function do gabarito, não entendi o enunciado!
+function newTaskDiv(color, size) {
+  const tasksContainer = document.querySelector('.my-tasks')
+  const newTask = document.createElement('div')
+  newTask.className = 'task'
+  newTask.style.backgroundColor = color
+  newTask.style.height = `${size}px`
+  newTask.style.width = `${size}px`
+  tasksContainer.appendChild(newTask)
+}
+newTaskDiv('green', 23)
