@@ -121,3 +121,22 @@ function toggleChangeColor(className, newColor, target) {
       element.style.color = isSelected ? newColor : defaultColor
     });
 })}
+
+function addTask() {
+  const inputText = document.querySelector('#task-input').value
+  const taskList = document.querySelector('.task-list')
+  if(inputText !== '') {
+    console.log('executou')
+    const newTask = document.createElement('li')
+    newTask.innerText = inputText
+    taskList.appendChild(newTask)
+  } else {
+    alert('Erro! Valor Vazio.')
+  }
+}
+function addTaskByKeyEnter(event) {
+  if(event.key === 'Enter') addTask()
+}
+
+document.querySelector('#btn-add').addEventListener('click', addTask)
+document.querySelector('#task-input').addEventListener('keydown', addTaskByKeyEnter)
