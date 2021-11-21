@@ -71,3 +71,15 @@ document.getElementById('btn-friday')
       e.innerHTML = isNaN(currentText) ? fridayList[i] : 'friday'
     })
   })
+
+document.querySelectorAll('.days').forEach(element => {
+  element.addEventListener('mouseover', () => {
+    element.style.cursor = 'default';
+    element.style.transition = 'all 0.4s';
+    element.style.transform = 'scale(1.3)'
+  })
+
+  element.addEventListener('mouseout', () => {
+    element.style.transform = 'scale(1.0)'
+  })
+})
