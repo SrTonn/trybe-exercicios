@@ -93,6 +93,7 @@ function createTask(nameTag, parentClassName) {
 }
 createTask('span', 'my-tasks')
 
+const taskColor = 'green'
 // Peguei a function do gabarito, não entendi o enunciado!
 function newTaskDiv(color, size) {
   const tasksContainer = document.querySelector('.my-tasks')
@@ -103,10 +104,20 @@ function newTaskDiv(color, size) {
   newTask.style.width = `${size}px`
   tasksContainer.appendChild(newTask)
 }
-newTaskDiv('green', 23)
+newTaskDiv(taskColor, 23)
 
 document.querySelector('.my-tasks > div')
   .addEventListener('click', (event) => {
-    console.log(event.target)
     event.target.classList.toggle('selected')
+    toggleChangeColor('.days', taskColor, event.target)
   })
+
+function toggleChangeColor(className, newColor, target) {
+  const defaultColor = 'rgb(119,119,119)'
+  const list = document.querySelectorAll(className)
+  let isSelected = target.classList.contains('selected')
+  list.forEach(element => {
+    element.addEventListener('click', () => {
+      element.style.color = isSelected ? newColor : defaultColor
+    });
+})}
