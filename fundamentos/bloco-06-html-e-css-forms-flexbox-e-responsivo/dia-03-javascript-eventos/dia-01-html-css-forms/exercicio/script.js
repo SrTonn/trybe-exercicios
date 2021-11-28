@@ -53,35 +53,33 @@ function isInvalidDate() {
   const regexCatchMonth = /\/(1[0-2]|0[1-9])\//
   // Regex para buscar um intervalo de numero de (1908 a 2021)
   const regexCatchYear = /\/(190[8-9]|19[1-9]\d|20[0-1]\d|202[0-1])$/
-  let isInvalid = false
 
   if (!regexCatchFormat.test(input.value)) {
-    isInvalid = true
     alert('Formato da data inválida!')
     input.focus()
-    return;
+    return true;
   }
 
   if (!regexCatchDay.test(input.value)) {
-    isInvalid = true
     alert('Dia inválido!')
     input.focus()
-    return;
+    return true;
   }
 
   if (!regexCatchMonth.test(input.value)) {
-    isInvalid = true
     alert('Mês inválido!')
     input.focus()
-    return;
+    return true;
   }
 
   if (!regexCatchYear.test(input.value)) {
-    isInvalid = true
     alert('Ano inválido!')
     input.focus()
-    return;
+    return true;
   }
+  
+  return false
+}
 
 function isInvalidCpf() {
   const input = document.querySelector('#cpf')
