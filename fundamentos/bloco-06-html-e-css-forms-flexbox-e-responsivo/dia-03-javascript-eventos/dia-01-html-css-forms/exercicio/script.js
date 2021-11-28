@@ -144,6 +144,13 @@ function isInvalidState() {
   return false
 }
 
+function complementChosen() {
+  const radixHouse = document.querySelector('#house')
+  const radixAp = document.querySelector('#ap')
+
+  return radixAp.checked ? radixAp.value : radixHouse.value
+}
+
 function submitForm(event) {
   event.preventDefault()
 
@@ -153,6 +160,7 @@ function submitForm(event) {
   if(isInvalidAddres()) return;
   if(isInvalidCity()) return;
   if(isInvalidState()) return;
+  // complementChosen()
 
   if(isInvalidDate()) return;
 
