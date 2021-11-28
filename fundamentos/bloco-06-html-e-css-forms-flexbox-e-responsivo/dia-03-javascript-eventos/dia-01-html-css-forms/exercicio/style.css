@@ -1,0 +1,40 @@
+#resume {
+  display: inline-block;
+}
+
+label {
+  display: inline-block;
+  width: 95px; 
+  text-align: right; 
+}
+
+.complement {
+  width: 25px;
+}
+input#house, input#ap {
+  transform: translateY(20%);
+}
+
+input#ap {
+  width: 120px;
+}
+
+fieldset {
+  vertical-align: auto;
+  width: fit-content;
+}
+
+#resume-label {
+  width: fit-content;
+  display: block;
+}
+#container-left {
+  display: inline-block;
+}
+
+#container-rigth {
+  /* float: right; */
+  display: inline-block;
+  height: 92px;
+  /* margin-top: 10px; */
+}
