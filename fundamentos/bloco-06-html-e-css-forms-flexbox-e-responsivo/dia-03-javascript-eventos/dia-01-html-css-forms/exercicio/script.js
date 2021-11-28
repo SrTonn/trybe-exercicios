@@ -15,17 +15,36 @@ stateOptions.forEach((state) => {
 })
 
 function isInvalidName() {
-  const input = document.querySelector('#name').value
+  const input = document.querySelector('#name')
 
-  if (!input) {
+  if (!input.value) {
     alert('O campo "nome" está vazio!')
+    input.focus()
+    return true
+  }
+  return false
+}
+
+function isInvalidEmail() {
+  const input = document.querySelector('#email')
+  const regexCatchEmailFormat = /^\w+@[a-z]+\.[a-z]{2,3}$/i
+
+  if (!regexCatchEmailFormat.test(input.value)) {
+    alert('Formato Inválido!\nTente o seguinte formato: nome@dominio.com')
+    input.focus()
+    return true
+  }
+
+  if (!input.value) {
+    alert('Campo "e-mail" obrigatório!')
+    input.focus()
     return true
   }
   return false
 }
 
 function isInvalidDate() {
-  const input = document.querySelector('#date').value
+  const input = document.querySelector('#date')
   // Regex para buscar o formato dd/mm/aaa
   const regexCatchFormat = /^(\d{2}\/){2}\d{4}$/
   // Regex para buscar um intervalo de numero de (01 a 31)
@@ -36,27 +55,31 @@ function isInvalidDate() {
   const regexCatchYear = /\/(190[8-9]|19[1-9]\d|20[0-1]\d|202[0-1])$/
   let isInvalid = false
 
-  if (!regexCatchFormat.test(input)) {
+  if (!regexCatchFormat.test(input.value)) {
     isInvalid = true
     alert('Formato da data inválida!')
+    input.focus()
     return;
   }
 
-  if (!regexCatchDay.test(input)) {
+  if (!regexCatchDay.test(input.value)) {
     isInvalid = true
     alert('Dia inválido!')
+    input.focus()
     return;
   }
 
-  if (!regexCatchMonth.test(input)) {
+  if (!regexCatchMonth.test(input.value)) {
     isInvalid = true
     alert('Mês inválido!')
+    input.focus()
     return;
   }
 
-  if (!regexCatchYear.test(input)) {
+  if (!regexCatchYear.test(input.value)) {
     isInvalid = true
     alert('Ano inválido!')
+    input.focus()
     return;
   }
 
@@ -65,9 +88,9 @@ function isInvalidDate() {
 
 function submitForm(event) {
   event.preventDefault()
-  console.log('event', event.target)
 
   if(isInvalidName()) return;
+  if(isInvalidEmail()) return;
   if(isInvalidDate()) return;
 }
 
