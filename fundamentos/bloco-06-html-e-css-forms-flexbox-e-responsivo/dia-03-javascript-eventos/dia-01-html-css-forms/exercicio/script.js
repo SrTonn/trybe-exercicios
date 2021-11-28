@@ -83,7 +83,17 @@ function isInvalidDate() {
     return;
   }
 
-  return isInvalid
+function isInvalidCpf() {
+  const input = document.querySelector('#cpf')
+  
+  const regexCatch11Number = /^\d{11}$/
+  
+  if(!regexCatch11Number.test(input.value)) {
+    alert('Cpf inválido!')
+    input.focus()
+    return true;
+  }
+  return false;
 }
 
 function submitForm(event) {
@@ -91,6 +101,7 @@ function submitForm(event) {
 
   if(isInvalidName()) return;
   if(isInvalidEmail()) return;
+  if(isInvalidCpf()) return;
   if(isInvalidDate()) return;
 }
 
