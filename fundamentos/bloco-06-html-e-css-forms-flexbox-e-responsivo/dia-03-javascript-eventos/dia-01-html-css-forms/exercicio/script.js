@@ -94,13 +94,36 @@ function isInvalidCpf() {
   return false;
 }
 
+function isInvalidAddres() {
+  const input = document.querySelector('#addres')
+  const regexCatchMinWord = /^[a-z]{2,10}\.?\s\w{2,}/i
+
+  if (!regexCatchMinWord.test(input.value)) {
+    alert('Endereço incompleto!')
+    input.focus()
+    return true;
+  }
+
+  if (!input.value) {
+    alert('Campo de endereço vazio!')
+    input.focus()
+    return true;
+  }
+
+  return false;
+}
+
 function submitForm(event) {
   event.preventDefault()
 
   if(isInvalidName()) return;
   if(isInvalidEmail()) return;
   if(isInvalidCpf()) return;
+  if(isInvalidAddres()) return;
+
   if(isInvalidDate()) return;
+
+  divAnswer.innerText = 'Formulario enviado!'
 }
 
 btnSubmit.addEventListener('click', submitForm)
