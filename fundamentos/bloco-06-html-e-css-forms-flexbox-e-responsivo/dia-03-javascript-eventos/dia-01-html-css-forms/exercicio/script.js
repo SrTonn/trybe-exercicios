@@ -132,6 +132,18 @@ function isInvalidCity() {
   return false
 }
 
+function isInvalidState() {
+  const input = document.querySelector('#state')
+
+  if(input.value === '--') {
+    alert('Selecione um estado!')
+    input.focus()
+    return true;
+  }
+
+  return false
+}
+
 function submitForm(event) {
   event.preventDefault()
 
@@ -140,6 +152,7 @@ function submitForm(event) {
   if(isInvalidCpf()) return;
   if(isInvalidAddres()) return;
   if(isInvalidCity()) return;
+  if(isInvalidState()) return;
 
   if(isInvalidDate()) return;
 
