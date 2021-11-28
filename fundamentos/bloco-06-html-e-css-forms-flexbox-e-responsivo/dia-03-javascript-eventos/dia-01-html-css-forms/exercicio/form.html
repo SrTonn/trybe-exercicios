@@ -9,7 +9,7 @@
 </head>
 <body>
   <main>
-    <form action="" method="get">
+    <form action="" method="GET">
       <p>Dados pessoais</p>
       <fieldset>
         <label for="name">Name:</label>
@@ -41,6 +41,16 @@
 
       <p>Dados do último emprego</p>
       <fieldset>
+        <div id="container-right">
+          <label for="job-role">Cargo:</label>
+          <input type="text" name="job-role" id="job-role" maxlength="40" required>
+          <br>
+          <label for="description">Descrição:</label>
+          <input type="text" name="description" id="description" maxlength="500" required>
+          <br>
+          <label for="date">Data:</label>
+          <input type="text" placeholder="dd/mm/aaaa" name="date" id="date" required>
+        </div>
         <div id="container-left">
           <label for="resume" id="resume-label">Resumo do currículo:</label>
           <textarea
@@ -52,18 +62,10 @@
             required
           ></textarea>
         </div>
-        <div id="container-rigth">
-          <label for="job-role">Cargo:</label>
-          <input type="text" name="job-role" id="job-role" maxlength="40" required>
-          <br>
-          <label for="description">Descrição:</label>
-          <input type="text" name="description" id="description" maxlength="500" required>
-          <br>
-          <label for="date">Data:</label>
-          <input type="text" placeholder="dd/mm/aaaa" name="date" id="date" required>
-        </div>
       </fieldset>
+      <button type="submit" id="submit">Enviar Formulário</button>
     </form>
+    <div id="answer"></div>
   </main>
   <script src="script.js"></script>
 </body>

@@ -1,5 +1,6 @@
 #resume {
   display: inline-block;
+  resize: none;
 }
 
 label {
@@ -32,9 +33,8 @@ fieldset {
   display: inline-block;
 }
 
-#container-rigth {
-  /* float: right; */
-  display: inline-block;
-  height: 92px;
-  /* margin-top: 10px; */
+#container-right {
+  float: right;
+  height: fit-content;
+  padding-top: 19px;
 }
