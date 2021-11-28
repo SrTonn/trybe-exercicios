@@ -113,6 +113,25 @@ function isInvalidAddres() {
   return false;
 }
 
+function isInvalidCity() {
+  const input = document.querySelector('#city')
+  const regexCatchMinWord = /[a-z]{2,}/i
+
+  if (!input.value) {
+    alert('O campo "cidade" está vazio!')
+    input.focus()
+    return true
+  }
+
+  if (!regexCatchMinWord.test(input.value)) {
+    alert('Cidade inválida!')
+    input.focus()
+    return true;
+  }
+
+  return false
+}
+
 function submitForm(event) {
   event.preventDefault()
 
@@ -120,6 +139,7 @@ function submitForm(event) {
   if(isInvalidEmail()) return;
   if(isInvalidCpf()) return;
   if(isInvalidAddres()) return;
+  if(isInvalidCity()) return;
 
   if(isInvalidDate()) return;
 
