@@ -145,6 +145,73 @@ function complementChosen() {
   return radixAp.checked ? radixAp.value : radixHouse.value
 }
 
+function isInvalidResume() {
+  const input = document.querySelector('#resume')
+  const regexCatchMinWord = /\w{5,}/i
+  
+  if (!input.value) {
+    const msgError = 'O campo "resumo" está vazio!'
+    alert(msgError)
+    errorList.push(msgError)
+    input.focus()
+    return true
+  }
+  
+  if (!regexCatchMinWord.test(input.value)) {
+    const msgError = 'resumo do currículo incompleto!'
+    alert(msgError)
+    errorList.push(msgError)
+    input.focus()
+    return true;
+  }
+  
+  return false
+}
+function isInvalidJobRole() {
+  const input = document.querySelector('#job-role')
+  const regexCatchMinWord = /\w{5,}/i
+  
+  if (!input.value) {
+    const msgError = 'O campo "cargo" está vazio!'
+    alert(msgError)
+    errorList.push(msgError)
+    input.focus()
+    return true
+  }
+  
+  if (!regexCatchMinWord.test(input.value)) {
+    const msgError = 'resumo do cargo incompleto!'
+    alert(msgError)
+    errorList.push(msgError)
+    input.focus()
+    return true;
+  }
+  
+  return false
+}
+function isInvalidDescription() {
+  const input = document.querySelector('#description')
+  const regexCatchMinWord = /\w{3,}/i
+  
+  if (!input.value) {
+    const msgError = 'O campo "descrição" está vazio!'
+    alert(msgError)
+    errorList.push(msgError)
+    input.focus()
+    return true
+  }
+  
+  if (!regexCatchMinWord.test(input.value)) {
+    const msgError = 'Descrição incompleta!'
+    alert(msgError)
+    errorList.push(msgError)
+    input.focus()
+    return true;
+  }
+  
+  return false
+}
+
 function isInvalidDate() {
   const input = document.querySelector('#date')
   // Regex para buscar o formato dd/mm/aaa
@@ -201,6 +268,9 @@ function submitForm(event) {
     isInvalidAddres(),
     isInvalidCity(),
     isInvalidState(),
+    isInvalidResume(),
+    isInvalidJobRole(),
+    isInvalidDescription(),
     isInvalidDate(),
   ]
 
@@ -211,7 +281,7 @@ function submitForm(event) {
 
   divAnswer.innerHTML = allConditions.includes(true)
                       ? tagUl.outerHTML
-                      : 'Formulario enviado!'
+                      : '<p>Formulário enviado!</p>'
 
   errorList = []
   tagUl.innerHTML = ''
