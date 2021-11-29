@@ -38,3 +38,7 @@ fieldset {
   height: fit-content;
   padding-top: 19px;
 }
+
+.incorrectAnswer {
+  color: red;
+}
