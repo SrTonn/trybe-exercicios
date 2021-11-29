@@ -1,0 +1,44 @@
+#resume {
+  display: inline-block;
+  resize: none;
+}
+
+label {
+  display: inline-block;
+  width: 95px; 
+  text-align: right; 
+}
+
+.complement {
+  width: 25px;
+}
+input#house, input#ap {
+  transform: translateY(20%);
+}
+
+input#ap {
+  width: 120px;
+}
+
+fieldset {
+  vertical-align: auto;
+  width: fit-content;
+}
+
+#resume-label {
+  width: fit-content;
+  display: block;
+}
+#container-left {
+  display: inline-block;
+}
+
+#container-right {
+  float: right;
+  height: fit-content;
+  padding-top: 19px;
+}
+
+.incorrectAnswer {
+  color: red;
+}

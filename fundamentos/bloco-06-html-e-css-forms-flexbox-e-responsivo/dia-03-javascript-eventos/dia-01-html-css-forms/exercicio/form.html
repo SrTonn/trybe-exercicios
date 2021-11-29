@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Exercício 6.1</title>
+</head>
+<body>
+  <main>
+    <form action="" method="GET">
+      <p>Dados pessoais</p>
+      <fieldset>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" maxlength="40" required>
+        <!-- <br> -->
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" maxlength="50" required>
+        <br>
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf" id="cpf" maxlength="11" required>
+        <!-- <br> -->
+        <label for="addres">Endereço:</label>
+        <input type="text" name="addres" id="addres" maxlength="200" required>
+        <br>
+        <label for="city">Cidade:</label>
+        <input type="text" name="city" id="city" maxlength="28" required>
+        <!-- <br> -->
+        <label for="state">Estado:</label>
+        <select name="state" id="state" required>
+          <option disabled selected>--</option>
+        </select>
+        <br>
+        <span class="inline">Complemento:</span>
+        <label for="house" class="complement">Casa</label>
+        <input type="radio" name="complement" id="house" value="house" required>
+        <label for="ap" class="complement">Apartamento</label>
+        <input type="radio" name="complement" id="ap" value="ap" required>
+      </fieldset>
+      <p>Dados do último emprego</p>
+      <fieldset>
+        <div id="container-right">
+          <label for="job-role">Cargo:</label>
+          <input type="text" name="job-role" id="job-role" maxlength="40" required>
+          <br>
+          <label for="description">Descrição:</label>
+          <input type="text" name="description" id="description" maxlength="500" required>
+          <br>
+          <label for="date">Data:</label>
+          <input type="text" placeholder="dd/mm/aaaa" name="date" id="date" required>
+        </div>
+        <div id="container-left">
+          <label for="resume" id="resume-label">Resumo do currículo:</label>
+          <textarea
+            name=""
+            id="resume"
+            cols="30"
+            rows="4"
+            maxlength="1000"
+            required
+          ></textarea>
+        </div>
+      </fieldset>
+      <button type="submit" id="submit">Enviar Formulário</button>
+    </form>
+    <div id="answer"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
