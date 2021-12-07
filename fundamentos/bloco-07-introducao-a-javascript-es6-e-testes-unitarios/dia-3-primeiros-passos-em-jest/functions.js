@@ -49,10 +49,24 @@ function decode(str) {
   return str.replace(/[1-5]/g, (number) => (table[number]));
 }
 
+function techList(techs, name) {
+  if (techs.length === 0) return 'Vazio!';
+  let result = [];
+  techs.sort().forEach((tech) => {
+    result.push({
+      tech,
+      name,
+    });
+  });
+
+  return result;
+}
+
 module.exports = {
   sum,
   myRemove,
   myFizzBuzz,
   encode,
   decode,
+  techList,
 }
