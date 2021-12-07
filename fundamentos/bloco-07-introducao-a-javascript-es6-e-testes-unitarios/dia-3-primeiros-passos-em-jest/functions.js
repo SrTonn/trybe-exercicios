@@ -62,6 +62,16 @@ function techList(techs, name) {
   return result;
 }
 
+function hydrate(str) {
+  const singularMessage = 'copo de água';
+  const pluralMessage = 'copos de água';
+
+  const regex = /\d+/g;
+  const number = str.match(regex).reduce((acc, curr) => acc + Number(curr), 0);
+
+  return number > 1 ? `${number} ${pluralMessage}` : `${number} ${singularMessage}`;
+}
+
 module.exports = {
   sum,
   myRemove,
@@ -69,4 +79,5 @@ module.exports = {
   encode,
   decode,
   techList,
+  hydrate,
 }
