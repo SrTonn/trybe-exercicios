@@ -23,10 +23,36 @@ function myFizzBuzz(num) {
   if (num % 5 === 0) return 'buzz';
   return num;
 }
-console.log(myFizzBuzz('aloha'))
+
+function encode(str) {
+  const table = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5,
+  };
+
+  return str.replace(/(a|e|i|o|u)/g, (letter) => (table[letter]));
+}
+console.log(encode('aeiou'))
+
+function decode(str) {
+  const table = {
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u',
+  };
+
+  return str.replace(/[1-5]/g, (number) => (table[number]));
+}
 
 module.exports = {
   sum,
   myRemove,
   myFizzBuzz,
+  encode,
+  decode,
 }

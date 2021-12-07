@@ -1,5 +1,4 @@
-const { sum, myRemove, myFizzBuzz } = require('./sum')
-console.log(sum)
+const { sum, myRemove, myFizzBuzz, encode, decode } = require('./sum')
 
 describe('teste da funcao sum()', () => {
   it('checa a soma de 4 e 5', () => {
@@ -44,5 +43,32 @@ describe('teste da funcao myFizzBuzz()', () => {
 
   it('checa se ao enviar um valor diferente do tipo \'number\' a funcao retorna um \'false\'', () => {
     expect(myFizzBuzz('aloha')).toBe(false)
+  })
+})
+
+describe('teste da funcao encode()', () => {
+  it('verifica se o encode é uma funcao', () => {
+    expect(encode).toEqual(expect.any(Function))
+  })
+
+  it('verifica se o decode é uma funcao', () => {
+    expect(decode).toEqual(expect.any(Function))
+  })
+
+  it('verifica se a funcao encode está substituindo as letras por numeros',() => {
+    expect(encode('aeiou')).toBe('12345')
+  })
+
+  it('verifica se a funcao decode está substituindo os numeros pelas letras',() => {
+    expect(decode('12345')).toBe('aeiou')
+  })
+
+  it('verifica se as consoantes não estão sendo alteradas.',() => {
+    expect(decode('b c d f g h j k l m n p q r s t v w x z'))
+      .toBe('b c d f g h j k l m n p q r s t v w x z')
+  })
+
+  it('verifica se a funcao decode retorna o mesmo numero de caracteres ao qual foi passado como parametro',() => {
+    expect(decode('aloha').length).toBe(5)
   })
 })
