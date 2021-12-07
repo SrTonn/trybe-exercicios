@@ -1,3 +1,4 @@
+const { expect } = require('@jest/globals')
 const {
   sum,
   myRemove,
@@ -6,6 +7,7 @@ const {
   decode,
   techList,
   hydrate,
+  searchEmployee,
 } = require('./functions')
 
 describe('teste da funcao sum()', () => {
@@ -132,3 +134,25 @@ describe('Testa a função hydrate', () => {
     expect(hydrate('4 caipirinhas e 2 cervejas')).toBe('6 copos de água');
   });
 });
+
+describe('teste da funcao searchEmployee()', () => {
+  it('Ao receber um id retorne os dados de acordo o objeto', () => {
+    expect(searchEmployee('8579-6', 'specialities')).toEqual(['UX', 'Design'])
+
+    expect(searchEmployee('1256-4')).toEqual({
+      firstName: 'Linda',
+      lastName: 'Bezos',
+      specialities: ['Hooks', 'Context API', 'Tailwind CSS'],
+    })
+
+    expect(searchEmployee('4678-2')).toEqual({
+      firstName: 'Paul',
+      lastName: 'Dodds',
+      specialities: ['Backend'],
+    })
+  })
+
+  it('Ao receber um id inválido retorne a mensagem \'ID não identificada\'', () => {
+    expect(searchEmployee('9999-9')).toBe('ID não identificada')
+  })
+})

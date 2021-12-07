@@ -1,3 +1,5 @@
+// const dados = require('./dados')
+
 function sum(a, b) {
   if (typeof a !== 'number' || typeof b !== 'number') {
     throw new Error('parameters must be numbers');
@@ -72,6 +74,68 @@ function hydrate(str) {
   return number > 1 ? `${number} ${pluralMessage}` : `${number} ${singularMessage}`;
 }
 
+// Dados
+const professionalBoard = [
+  {
+    id: '8579-6',
+    firstName: 'Ana',
+    lastName: 'Gates',
+    specialities: ['UX', 'Design'],
+  },
+  {
+    id: '5569-4',
+    firstName: 'George',
+    lastName: 'Jobs',
+    specialities: ['Frontend', 'Redux', 'React', 'CSS'],
+  },
+  {
+    id: '4456-4',
+    firstName: 'Leila',
+    lastName: 'Zuckerberg',
+    specialities: ['Context API', 'RTL', 'Bootstrap'],
+  },
+  {
+    id: '1256-4',
+    firstName: 'Linda',
+    lastName: 'Bezos',
+    specialities: ['Hooks', 'Context API', 'Tailwind CSS'],
+  },
+  {
+    id: '9852-2-2',
+    firstName: 'Jeff',
+    lastName: 'Cook',
+    specialities: ['Ruby', 'SQL'],
+  },
+  {
+    id: '4678-2',
+    firstName: 'Paul',
+    lastName: 'Dodds',
+    specialities: ['Backend'],
+  },
+];
+
+function checkEmptyObj(obj) {
+  return JSON.stringify(obj) === "{}"
+}
+// Bônus
+const searchEmployee = (id, details) => {
+  const result = {}
+  professionalBoard.forEach((obj) => {
+    if (obj.id === id) {
+      result.firstName = obj.firstName
+      result.lastName = obj.lastName
+      result.specialities = obj.specialities
+    }
+  })
+
+  if (result[details]) {
+    return result[details]
+  }
+
+  return checkEmptyObj(result) ? 'ID não identificada' : result
+};
+console.log(searchEmployee('8579-6'))
+
 module.exports = {
   sum,
   myRemove,
@@ -80,4 +144,5 @@ module.exports = {
   decode,
   techList,
   hydrate,
+  searchEmployee,
 }
