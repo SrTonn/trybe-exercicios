@@ -1,4 +1,4 @@
-const { sum, myRemove, myFizzBuzz, encode, decode } = require('./sum')
+const { sum, myRemove, myFizzBuzz, encode, decode } = require('./functions')
 
 describe('teste da funcao sum()', () => {
   it('checa a soma de 4 e 5', () => {
