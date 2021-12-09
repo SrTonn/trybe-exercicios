@@ -1,0 +1,15 @@
+{
+  "name": "dia-01-javascript-es6-introducao-a-higher-order-functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.3"
+  }
+}
