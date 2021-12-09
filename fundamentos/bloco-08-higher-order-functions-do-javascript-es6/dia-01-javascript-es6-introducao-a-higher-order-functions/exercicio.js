@@ -13,8 +13,9 @@ const newEmployees = (func) => {
   return employees;
 };
 
-console.log(newEmployees(employeeGenerator('Pedro Guerra')));
-console.log(newEmployees(employeeGenerator('Luiza Drumond')));
-console.log(newEmployees(employeeGenerator('Carla Paiva')));
+const shuffle = () => Math.ceil(Math.random() * 5);
+const bet = (betNum, func) => (betNum === func ? 'Parabéns você ganhou' : 'Tente novamente');
 
-module.exports = { newEmployees, employeeGenerator };
+module.exports = {
+  newEmployees, employeeGenerator, shuffle, bet,
+};

@@ -1,4 +1,6 @@
-const { employeeGenerator, newEmployees } = require('./exercicio');
+const {
+  employeeGenerator, newEmployees, shuffle, bet,
+} = require('./exercicio');
 
 describe('Implemente os casos de teste dos exercícios do dia 8.1', () => {
   it('Verifica se ao receber um uma string com nome retorna um objeto contendos os valores esperados', () => {
