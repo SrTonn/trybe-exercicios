@@ -159,3 +159,11 @@ function everyoneWasBornOnSecXX(array) {
   return array.every(({author}) => author.birthYear > 2001)
 }
 console.log(everyoneWasBornOnSecXX(books)) // false
+
+// Exercício 06
+// const expectedResult = true;
+
+function someBookWasReleaseOnThe80s(array) {
+  return array.some(({releaseYear}) => releaseYear >= 1980 && releaseYear < 1990)
+}
+console.log(someBookWasReleaseOnThe80s(books)) // true
