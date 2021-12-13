@@ -34,17 +34,24 @@ const checkAnswers = (correctAnswer, studentAnswer) => {
       total -= 0.5
     }
   });
-
+  
   return total
 }
 
 const showFinalNote = (correctAnswer, studentAnswer, callback) => {
   const note = callback(correctAnswer, studentAnswer)
-  return `Pontuação final: ${note}.`
+  return note
 }
 
 console.log(showFinalNote(RIGHT_ANSWERS, STUDENT_ANSWERS, checkAnswers))
 
 module.exports = {
-  newEmployees, employeeGenerator, shuffle, bet,
+  newEmployees,
+  employeeGenerator,
+  shuffle,
+  bet,
+  checkAnswers,
+  showFinalNote,
+  RIGHT_ANSWERS,
+  STUDENT_ANSWERS,
 };
