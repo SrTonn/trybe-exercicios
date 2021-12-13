@@ -1,6 +1,6 @@
 const {
   employeeGenerator, newEmployees, shuffle, bet,
-} = require('./exercicio');
+} = require('./exercicios');
 
 describe('Implemente os casos de teste dos exercícios do dia 8.1', () => {
   it('Verifica se ao receber um uma string com nome retorna um objeto contendos os valores esperados', () => {
