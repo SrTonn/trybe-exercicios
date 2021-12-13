@@ -167,3 +167,15 @@ function someBookWasReleaseOnThe80s(array) {
   return array.some(({releaseYear}) => releaseYear >= 1980 && releaseYear < 1990)
 }
 console.log(someBookWasReleaseOnThe80s(books)) // true
+
+// const expectedResult = false;
+
+function authorUnique(array) {
+  const birthYearList = []
+  array.forEach(({author}) => {
+    birthYearList.push(author.birthYear)
+  })
+  
+  return birthYearList.length === new Set(birthYearList).size
+}
+console.log(authorUnique(books)) // false
