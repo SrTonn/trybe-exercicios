@@ -10,3 +10,16 @@ console.log(res) // retorna 'aconteceu'
 
 // Parte III
 // Feito em um arquivo a parte, pasta exercicio2.3
+
+// Parte IV
+const replaceX = (str, x) => {
+  return str.replace('x', x)
+}
+// console.log(replaceX("Tryber x aqui!", 'Tonn'))
+
+const skills = ['javascript', 'typescript', 'jest', 'HTML', 'CSS']
+
+const func = (callback) => {
+  return `${callback} Minhas cinco principais habilidades são:\n${skills.sort().join(',\n')}`
+}
+console.log(func(replaceX("Tryber x aqui!", 'Tonn')))
