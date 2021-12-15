@@ -7,3 +7,6 @@ const longestWord = (str) => str.split(' ').reduce((acc, val) => acc.length > va
 const res = longestWord("Antonio foi no banheiro e nao sabemos o que aconteceu") // retorna 'aconteceu'
 
 console.log(res) // retorna 'aconteceu'
+
+// Parte III
+// Feito em um arquivo a parte, pasta exercicio2.3
