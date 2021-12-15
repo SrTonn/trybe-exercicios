@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quantidade de cliques: <span>0</span></h1>
+  <button>clique aqui</button>
+
+  <script>
+    const tagSpan = document.querySelector('span')
+    const btnSubmit = document.querySelector('button')
+    let counter = 0
+    btnSubmit.addEventListener('click', () => {
+      counter += 1
+      tagSpan.innerText = counter
+    })
+  </script>
+</body>
+</html>
