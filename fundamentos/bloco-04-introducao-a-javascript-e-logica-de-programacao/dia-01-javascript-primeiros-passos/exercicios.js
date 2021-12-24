@@ -6,7 +6,9 @@ const multiplicacao = (num1, num2) => num1 * num2
 const divisao = (num1, num2) => num1 / num2
 const modulo = (num1, num2) => num1 % num2
 
-// exercicio 2
+// exercicio 2 e 3
+
+const highNumber = (...numbers) => Math.max(...numbers)
 
 // exercicio 4
 
