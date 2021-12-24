@@ -27,3 +27,8 @@ function listObjectKeys(obj) {
   console.log(Object.keys(obj))
 }
 listObjectKeys(lesson1)
+
+function objectLenght(obj) {
+  console.log(Object.keys(lesson1).length)
+}
+objectLenght(lesson3)
