@@ -17,3 +17,8 @@ const lesson3 = {
   professor: 'Maria Clara',
   turno: 'noite',
 };
+
+function addNightShift(obj, key, value) {
+  obj[key] = value
+}
+addNightShift(lesson2, 'turno', 'noite')
