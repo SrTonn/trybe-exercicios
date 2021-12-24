@@ -49,3 +49,9 @@ function getValueByNumber(obj, index) {
   return Object.values(obj)[index]
 }
 console.log(getValueByNumber(lesson1, 0))
+
+function verifyPair(obj, key, value) {
+  return Object.entries(obj).some(v => v[0] === key && v[1] === value)
+}
+console.log(verifyPair(lesson3, 'turno', 'noite')); // true
+console.log(verifyPair(lesson3, 'materia', 'Maria Clara')); // false
