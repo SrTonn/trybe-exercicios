@@ -51,6 +51,8 @@ const notePercent = (note) => {
 
 // exercicio 8
 
+const someEven = (num1, num2, num3) => num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0
+
 // exercicio 9
 
 // exercicio 10
