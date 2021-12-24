@@ -22,3 +22,8 @@ function addNightShift(obj, key, value) {
   obj[key] = value
 }
 addNightShift(lesson2, 'turno', 'noite')
+
+function listObjectKeys(obj) {
+  console.log(Object.keys(obj))
+}
+listObjectKeys(lesson1)
