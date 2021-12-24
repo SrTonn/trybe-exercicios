@@ -44,3 +44,8 @@ function numberOfStudents(obj) {
   return Object.values(obj).reduce((acc, {numeroEstudantes}) => acc + numeroEstudantes, 0)
 }
 console.log(numberOfStudents(allLessons))
+
+function getValueByNumber(obj, index) {
+  return Object.values(obj)[index]
+}
+console.log(getValueByNumber(lesson1, 0))
