@@ -36,8 +36,18 @@ const chessMovement = (piece) => {
   }
   return table[piece.toLowerCase()] || 'Invalid name!'
 }
-console.log(chessMovement('Bishop'))
+
 // exercicio 7
+
+const notePercent = (note) => {
+  if (note < 0 || note > 100) return 'Invalid note!'
+  if (note >= 90) return 'A'
+  if (note >= 80) return 'B'
+  if (note >= 70) return 'C'
+  if (note >= 60) return 'D'
+  if (note >= 50) return 'E'
+  return 'F'
+}
 
 // exercicio 8
 
