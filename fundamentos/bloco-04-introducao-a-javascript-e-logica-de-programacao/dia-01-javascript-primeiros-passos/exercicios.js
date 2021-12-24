@@ -12,6 +12,8 @@ const highNumber = (...numbers) => Math.max(...numbers)
 
 // exercicio 4
 
+const isPositive = (number) => number > 0 ? 'positive' : number < 0 ? 'negative' : 'zero'
+
 // exercicio 5
 
 // exercicio 6
