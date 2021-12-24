@@ -55,3 +55,12 @@ function verifyPair(obj, key, value) {
 }
 console.log(verifyPair(lesson3, 'turno', 'noite')); // true
 console.log(verifyPair(lesson3, 'materia', 'Maria Clara')); // false
+
+// Bônus
+// Part I
+function createReport(obj, professor) {
+  return Object.values(obj).reduce((acc, obj) => obj.professor === professor ? acc + obj.numeroEstudantes : acc, 0)
+}
+console.log(createReport(allLessons, 'Maria Clara')) // 30
+
+// Part I
