@@ -55,6 +55,8 @@ const someEven = (num1, num2, num3) => num1 % 2 === 0 || num2 % 2 === 0 || num3 
 
 // exercicio 9
 
+const someOdd = (num1, num2, num3) => num1 % 2 === 1 || num2 % 2 === 1 || num3 % 2 === 1
+
 // exercicio 10
 
 // exercicio 11
