@@ -16,6 +16,13 @@ const isPositive = (number) => number > 0 ? 'positive' : number < 0 ? 'negative'
 
 // exercicio 5
 
+const isTriangle = (angle1, angle2, angle3) => {
+  const sumOfAngles = angle1 + angle2 + angle3
+  const isAllPositive = angle1 > 0 && angle2 > 0 && angle3 > 0
+
+  return isAllPositive && sumOfAngles === 180
+}
+
 // exercicio 6
 
 // exercicio 7
