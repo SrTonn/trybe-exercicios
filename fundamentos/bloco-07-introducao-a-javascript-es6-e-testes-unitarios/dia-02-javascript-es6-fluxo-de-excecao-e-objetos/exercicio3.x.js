@@ -32,3 +32,8 @@ function objectLenght(obj) {
   console.log(Object.keys(lesson1).length)
 }
 objectLenght(lesson3)
+
+function listObjectValues(obj) {
+  console.log(Object.values(obj))
+}
+listObjectValues(lesson2)
