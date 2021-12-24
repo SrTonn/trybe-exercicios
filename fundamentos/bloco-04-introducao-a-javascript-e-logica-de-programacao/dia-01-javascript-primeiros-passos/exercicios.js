@@ -25,6 +25,18 @@ const isTriangle = (angle1, angle2, angle3) => {
 
 // exercicio 6
 
+const chessMovement = (piece) => {
+  const table = {
+    king: 'The king can move one square in any direction.',
+    bishop: 'The bishop can move diagonally as many squares as it would like, without jumping over another piece',
+    knight: 'The knight is the only piece on the board that can jump over another piece.',
+    rook: 'The rook can move any number of squares up, down, and across.',
+    queen: 'The queen combines the moves from the bishop and rook. It can move any squares in a diagonal direction, or go up, down, and sideways as many squares without jumping over another piece.',
+    pawn: 'The pawn is the only piece on the chess board that can’t go backwards. It is also the only piece where you can’t move it the same number of squares the entire game. The first time you move a pawn you can move it one or two squares. Once the pawn has moved you can only move the pawn one square after that.',
+  }
+  return table[piece.toLowerCase()] || 'Invalid name!'
+}
+console.log(chessMovement('Bishop'))
 // exercicio 7
 
 // exercicio 8
