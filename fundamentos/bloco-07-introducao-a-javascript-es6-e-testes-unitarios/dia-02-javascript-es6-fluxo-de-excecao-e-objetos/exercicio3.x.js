@@ -58,9 +58,17 @@ console.log(verifyPair(lesson3, 'materia', 'Maria Clara')); // false
 
 // Bônus
 // Part I
-function createReport(obj, professor) {
+function countStudentsByProfessor(obj, professor) {
   return Object.values(obj).reduce((acc, obj) => obj.professor === professor ? acc + obj.numeroEstudantes : acc, 0)
 }
-console.log(createReport(allLessons, 'Maria Clara')) // 30
+console.log(countStudentsByProfessor(allLessons, 'Maria Clara')) // 30
 
 // Part I
+function createReport(allLessons, professor) {
+  return {
+    professor,
+    aulas: Object.values(allLessons).filter( v => v.professor === professor).map(v => v.materia),
+    estudantes: countStudentsByProfessor(allLessons, 'Maria Clara')
+  }
+}
+console.log(createReport(allLessons, 'Maria Clara'))
