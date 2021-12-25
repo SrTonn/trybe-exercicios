@@ -59,6 +59,17 @@ const someOdd = (num1, num2, num3) => num1 % 2 === 1 || num2 % 2 === 1 || num3 %
 
 // exercicio 10
 
+const calcProfit = (costOfProduct, saleValue) => {
+  if (costOfProduct >= 0 && saleValue >= 0) {
+    const totalCostOfProduct = costOfProduct * 1.2
+    const totalProfit = (saleValue - totalCostOfProduct) * 1000
+    return totalProfit
+  }
+
+  return "Error, os valores não podem ser negativos"
+}
+console.log(calcProfit(1, 3))
+
 // exercicio 11
 
 // exercicio 12
