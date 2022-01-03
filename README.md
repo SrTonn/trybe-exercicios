@@ -1,12 +1,16 @@
-# Trybe - Conteúdo
+<div align="center">
+  <h1>Trybe - Conteúdo</h1>
+</div>
 
 Neste repositório constam todas as atividades de aprendizagem desenvolvidas por _[Wellington Rodrigues](https://www.linkedin.com/in/wellingtonrodrigues/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde uma das possibilidades de pagamento é quando a pessoa conseguir um emprego na área de tecnologia."_
 
 O programa conta com mais de 1.500 horas de aulas online, abordando Introdução ao Desenvolvimento de Software, Front-End, Back-End, Ciência da Computação, Engenharia de Software, Metodologias Ágeis e Habilidades Comportamentais.
-
-## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
+<div align="center">
+  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/SrTonn/trybe-exercicios?style=for-the-badge">
+  <h2>Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:</h2>
+</div>
 
 ##### Bloco 1: Introdução - Unix & Bash
 
@@ -84,7 +88,9 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 - [ ] 9-3: _Jest - Testes Assíncronos_
 - [ ] 9-4: _[Projeto - Carrinho de Compras]()_
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+<div align="center">
+  <h2>Desenvolvimento Front-end :hourglass_flowing_sand:</h2>
+</div>
 
 ##### Bloco 10: Introdução à React
 
@@ -142,7 +148,9 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 
 - [ ] 18-1: _[Projeto - App de Receitas]()_
 
-## Desenvolvimento Back-end :hourglass_flowing_sand:
+<div align="center">
+  <h2>Desenvolvimento Back-end :hourglass_flowing_sand:</h2>
+</div>
 
 ##### Bloco 19: Introdução à SQL
 
@@ -239,7 +247,9 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 
 - [ ] 31-1: _[Projeto - App de Delivery]()_
 
-## Ciência da Computação :hourglass_flowing_sand:
+<div align="center">
+  <h2>Ciência da Computação :hourglass_flowing_sand:</h2>
+</div>
 
 ##### Bloco 32: Introdução à Python
 
