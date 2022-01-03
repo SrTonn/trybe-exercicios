@@ -47,4 +47,8 @@ for (let i = 1; i < numbers.length; i += 1) {
 console.log(menorValor)
 
 // exercicio 08
+
+const newArray = Array.from({length: 25}, (_, i) => i + 1)
+console.log(newArray)
+
 // exercicio 09
