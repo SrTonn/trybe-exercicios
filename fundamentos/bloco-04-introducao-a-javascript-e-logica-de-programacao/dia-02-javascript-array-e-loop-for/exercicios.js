@@ -15,6 +15,9 @@ const mediaAritmetica = numbers.reduce((acc, val) => acc + val) / numbers.length
 console.log(mediaAritmetica)
 
 // exercicio 04
+
+mediaAritmetica > 20 ? console.log("valor maior que 20") : console.log("valor menor ou igual a 20")
+
 // exercicio 05
 // exercicio 06
 // exercicio 07
