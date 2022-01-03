@@ -37,5 +37,14 @@ const odd = numbers.reduce((acc, val) => {
 console.log(odd)
 
 // exercicio 07
+
+let menorValor = numbers[0]
+for (let i = 1; i < numbers.length; i += 1) {
+  if (numbers[i] < menorValor) {
+    menorValor = numbers[i]
+  }
+}
+console.log(menorValor)
+
 // exercicio 08
 // exercicio 09
