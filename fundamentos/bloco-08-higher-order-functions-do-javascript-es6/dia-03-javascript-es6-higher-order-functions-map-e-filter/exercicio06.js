@@ -69,7 +69,10 @@ const expectedResult = [
   'O Chamado de Cthulhu',
 ];
 
+const date = new Date()
 
 function oldBooks() {
-  // escreva seu código aqui
+  return books.filter(obj => date.getFullYear() - obj.releaseYear > 60)
+    .map(({name}) => name)
 }
+console.log(oldBooks())
