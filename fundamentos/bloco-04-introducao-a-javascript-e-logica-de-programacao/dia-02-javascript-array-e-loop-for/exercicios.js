@@ -19,6 +19,15 @@ console.log(mediaAritmetica)
 mediaAritmetica > 20 ? console.log("valor maior que 20") : console.log("valor menor ou igual a 20")
 
 // exercicio 05
+
+let maiorValor = numbers[0]
+for (let i = 1; i < numbers.length; i += 1) {
+  if (numbers[i] > maiorValor) {
+    maiorValor = numbers[i]
+  }
+}
+console.log(maiorValor)
+
 // exercicio 06
 // exercicio 07
 // exercicio 08
