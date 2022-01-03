@@ -18,3 +18,13 @@ function bonus02(num) {
   }
 }
 bonus02(num)
+
+// Bônus 03
+function bonus03(num) {
+  const arr = Array.from({length: num}, () => ' ')
+  for (let i = 0; i < num; i += 1) {
+    const newArr = [...arr]
+    console.log(newArr.fill('*', 0, i + 1).reverse().join(' '))
+  }
+}
+bonus03(num)
