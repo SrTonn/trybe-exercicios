@@ -87,6 +87,10 @@ const expectedResult = [
   },
 ];
 
+const date = new Date()
+
 function oldBooksOrdered() {
-  // escreva seu código aqui
+  return books.filter(obj => date.getFullYear() - obj.releaseYear > 60)
+    .sort((a, b) => a.releaseYear - b.releaseYear)
 }
+console.log(oldBooksOrdered())
