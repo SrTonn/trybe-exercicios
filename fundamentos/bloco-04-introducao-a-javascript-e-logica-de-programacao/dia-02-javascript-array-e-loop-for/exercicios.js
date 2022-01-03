@@ -10,6 +10,10 @@ const soma = numbers.reduce((acc, val) => acc + val)
 console.log(soma)
 
 // exercicio 03
+
+const mediaAritmetica = numbers.reduce((acc, val) => acc + val) / numbers.length
+console.log(mediaAritmetica)
+
 // exercicio 04
 // exercicio 05
 // exercicio 06
