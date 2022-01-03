@@ -11,5 +11,11 @@ for (let i = val - 1; i > 0; i -= 1) {
 console.log(acc)
 
 // Exercicio 02
+
+const word = 'tryber'
+const reverseWord = word.split('').reverse().join('')
+console.log(word)
+console.log(reverseWord)
+
 // Exercicio 03
 // Exercicio 04
