@@ -52,3 +52,7 @@ const newArray = Array.from({length: 25}, (_, i) => i + 1)
 console.log(newArray)
 
 // exercicio 09
+
+newArray.forEach(num => {
+  console.log(num / 2)
+})
