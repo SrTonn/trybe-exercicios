@@ -5,6 +5,10 @@ const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 numbers.forEach(num => console.log(num))
 
 // exercicio 02
+
+const soma = numbers.reduce((acc, val) => acc + val)
+console.log(soma)
+
 // exercicio 03
 // exercicio 04
 // exercicio 05
