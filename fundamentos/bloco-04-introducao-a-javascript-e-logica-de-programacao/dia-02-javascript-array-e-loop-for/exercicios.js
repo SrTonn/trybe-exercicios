@@ -29,6 +29,13 @@ for (let i = 1; i < numbers.length; i += 1) {
 console.log(maiorValor)
 
 // exercicio 06
+
+const odd = numbers.reduce((acc, val) => {
+  if (val % 2 !== 0) acc++
+  return acc
+}, 0)
+console.log(odd)
+
 // exercicio 07
 // exercicio 08
 // exercicio 09
