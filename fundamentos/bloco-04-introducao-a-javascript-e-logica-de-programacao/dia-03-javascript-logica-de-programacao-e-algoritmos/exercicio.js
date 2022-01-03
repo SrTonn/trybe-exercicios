@@ -18,4 +18,12 @@ console.log(word)
 console.log(reverseWord)
 
 // Exercicio 03
+
+let array = ['java', 'javascript', 'python', 'html', 'css']
+const biggestWord = array.sort((a, b) => b.length - a.length)[0]
+console.log(biggestWord)
+
+const smallestWord = array.sort((a, b) => a.length - b.length)[0]
+console.log(smallestWord)
+
 // Exercicio 04
