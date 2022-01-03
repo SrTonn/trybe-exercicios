@@ -1,4 +1,7 @@
 <div align="center">
+  <img alt="Relative date" src="https://img.shields.io/date/1634860800?label=created&style=for-the-badge">
+  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/SrTonn/trybe-exercicios?style=for-the-badge">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/srtonn/trybe-exercicios?style=for-the-badge">
   <h1>Trybe - Conteúdo</h1>
 </div>
 
@@ -8,7 +11,6 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 
 O programa conta com mais de 1.500 horas de aulas online, abordando Introdução ao Desenvolvimento de Software, Front-End, Back-End, Ciência da Computação, Engenharia de Software, Metodologias Ágeis e Habilidades Comportamentais.
 <div align="center">
-  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/SrTonn/trybe-exercicios?style=for-the-badge">
   <h2>Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:</h2>
 </div>
 
@@ -39,7 +41,7 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 - [x] 4-1: _Introdução - JavaScript_
 - [x] 4-1: _JavaScript - Primeiros passos_
 - [x] 4-2: _JavaScript - Array e loop For_
-- [ ] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
+- [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [ ] 4-4: _JavaScript - Objetos e Funções_
 - [x] 4-5: _[Projeto - Playground Functions]()_
 
