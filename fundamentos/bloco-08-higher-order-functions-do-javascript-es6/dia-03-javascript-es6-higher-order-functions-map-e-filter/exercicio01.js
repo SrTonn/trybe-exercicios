@@ -73,5 +73,6 @@ const expectedResult = [
 ];
 
 function formatedBookNames() {
-  // escreva seu código aqui
+  return books.map(el => `${el.name} - ${el.genre} - ${el.author.name}`)
 }
+console.log(formatedBookNames())
