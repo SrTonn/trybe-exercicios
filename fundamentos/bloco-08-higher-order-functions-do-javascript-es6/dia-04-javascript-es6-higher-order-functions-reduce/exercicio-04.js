@@ -76,6 +76,6 @@ const expectedResult = {
 };
 
 function longestNamedBook() {
-  // escreva seu código aqui
+  return books.reduce((acc, obj) => obj.name.length > acc.name.length ? obj : acc)
 }
 console.log(longestNamedBook())
