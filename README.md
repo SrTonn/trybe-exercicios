@@ -80,7 +80,7 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 - [x] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
 - [x] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [x] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
-- [ ] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
+- [x] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [ ] 8-6: _[Projeto - Zoo functions]()_
 
 ##### Bloco 9: JavaScript e Testes Assíncronos
