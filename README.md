@@ -1,12 +1,18 @@
-# Trybe - Conteúdo
+<div align="center">
+  <img alt="Relative date" src="https://img.shields.io/date/1634860800?label=created&style=for-the-badge">
+  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/SrTonn/trybe-exercicios?style=for-the-badge">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/srtonn/trybe-exercicios?style=for-the-badge">
+  <h1>Trybe - Conteúdo</h1>
+</div>
 
 Neste repositório constam todas as atividades de aprendizagem desenvolvidas por _[Wellington Rodrigues](https://www.linkedin.com/in/wellingtonrodrigues/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde uma das possibilidades de pagamento é quando a pessoa conseguir um emprego na área de tecnologia."_
 
 O programa conta com mais de 1.500 horas de aulas online, abordando Introdução ao Desenvolvimento de Software, Front-End, Back-End, Ciência da Computação, Engenharia de Software, Metodologias Ágeis e Habilidades Comportamentais.
-
-## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
+<div align="center">
+  <h2>Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:</h2>
+</div>
 
 ##### Bloco 1: Introdução - Unix & Bash
 
@@ -35,7 +41,7 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 - [x] 4-1: _Introdução - JavaScript_
 - [x] 4-1: _JavaScript - Primeiros passos_
 - [x] 4-2: _JavaScript - Array e loop For_
-- [ ] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
+- [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [ ] 4-4: _JavaScript - Objetos e Funções_
 - [x] 4-5: _[Projeto - Playground Functions]()_
 
@@ -72,7 +78,7 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 
 - [x] 8-1: _JavaScript ES6 - Introdução à Higher Order Functions_
 - [x] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
-- [ ] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
+- [x] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [x] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
 - [ ] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [ ] 8-6: _[Projeto - Zoo functions]()_
@@ -84,7 +90,9 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 - [ ] 9-3: _Jest - Testes Assíncronos_
 - [ ] 9-4: _[Projeto - Carrinho de Compras]()_
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+<div align="center">
+  <h2>Desenvolvimento Front-end :hourglass_flowing_sand:</h2>
+</div>
 
 ##### Bloco 10: Introdução à React
 
@@ -142,7 +150,9 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 
 - [ ] 18-1: _[Projeto - App de Receitas]()_
 
-## Desenvolvimento Back-end :hourglass_flowing_sand:
+<div align="center">
+  <h2>Desenvolvimento Back-end :hourglass_flowing_sand:</h2>
+</div>
 
 ##### Bloco 19: Introdução à SQL
 
@@ -239,7 +249,9 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 
 - [ ] 31-1: _[Projeto - App de Delivery]()_
 
-## Ciência da Computação :hourglass_flowing_sand:
+<div align="center">
+  <h2>Ciência da Computação :hourglass_flowing_sand:</h2>
+</div>
 
 ##### Bloco 32: Introdução à Python
 
