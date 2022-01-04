@@ -5,6 +5,6 @@ const names = [
 ];
 
 function containsA() {
-  return names.reduce((acc, val) => (/^a/i.test(val) && acc + 1) || acc, 0)
+  return names.reduce((acc, val) => acc += val.match(/a/ig).length, 0)
 }
-console.log(containsA())
+console.log(containsA()) // 20
