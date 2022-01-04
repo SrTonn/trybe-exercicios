@@ -5,5 +5,6 @@ const names = [
 ];
 
 function containsA() {
-  // escreva seu código aqui
+  return names.reduce((acc, val) => (/^a/i.test(val) && acc + 1) || acc, 0)
 }
+console.log(containsA())
