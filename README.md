@@ -42,7 +42,7 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 - [x] 4-1: _JavaScript - Primeiros passos_
 - [x] 4-2: _JavaScript - Array e loop For_
 - [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
-- [ ] 4-4: _JavaScript - Objetos e Funções_
+- [x] 4-4: _JavaScript - Objetos e Funções_
 - [x] 4-5: _[Projeto - Playground Functions]()_
 
 ##### Bloco 5: JavaScrip: DOM, Eventos e Web Storage
