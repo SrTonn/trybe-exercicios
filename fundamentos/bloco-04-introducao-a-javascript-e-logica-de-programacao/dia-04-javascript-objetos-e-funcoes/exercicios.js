@@ -14,6 +14,11 @@ info.recorrente = 'Sim'
 console.log(info)
 
 // Exercícios 03
+
+for (const key in info) {
+  console.log(key)
+}
+
 // Exercícios 04
 // Exercícios 05
 // Exercícios 06
