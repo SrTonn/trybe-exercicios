@@ -69,3 +69,32 @@ function reduceNames() {
   return books.reduce((acc, {author}) => `${acc ? acc + ', ' : ''}${author.name}`, '') + '.'
 }
 console.log(reduceNames())
+
+// Versões alternativas
+function reduceNames2() {
+  return books.reduce((acc, {author}) => acc === '' ? author.name : acc + ', ' + author.name, '') + '.'
+}
+console.log(reduceNames2())
+
+function reduceNames3() {
+  return books.reduce((acc, {author}) => acc.concat(author.name, ', '), '').replace(/,\s*$/, '.')
+}
+console.log(reduceNames3())
+
+function reduceNames4() {
+  return books.reduce((acc, {author}) => acc.concat(author.name), []).join(', ') + '.'
+}
+console.log(reduceNames4())
+
+function reduceNames5() {
+  return books.reduce((acc, {author}) => acc.push(author.name) && acc, []).join(', ') + '.'
+}
+console.log(reduceNames5())
+
+function reduceNames6() {
+  return books.reduce((acc, {author}) => {
+    acc.push(author.name)
+    return acc
+  }, []).join(', ') + '.'
+}
+console.log(reduceNames6())
