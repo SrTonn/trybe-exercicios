@@ -5,6 +5,9 @@ let info = {
 };
 
 // Exercícios 01
+
+console.log(`Bem-vinda, ${info.personagem}`)
+
 // Exercícios 02
 // Exercícios 03
 // Exercícios 04
