@@ -9,6 +9,10 @@ let info = {
 console.log(`Bem-vinda, ${info.personagem}`)
 
 // Exercícios 02
+
+info.recorrente = 'Sim'
+console.log(info)
+
 // Exercícios 03
 // Exercícios 04
 // Exercícios 05
