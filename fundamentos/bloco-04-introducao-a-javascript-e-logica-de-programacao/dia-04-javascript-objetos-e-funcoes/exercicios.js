@@ -20,6 +20,11 @@ for (const key in info) {
 }
 
 // Exercícios 04
+
+for (const key in info) {
+  console.log(info[key])
+}
+
 // Exercícios 05
 // Exercícios 06
 // Exercícios 07
