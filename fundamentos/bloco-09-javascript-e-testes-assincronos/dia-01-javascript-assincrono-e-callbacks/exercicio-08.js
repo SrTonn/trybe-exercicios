@@ -17,14 +17,12 @@ const pokemons = [
 ];
 
 function getPokemonDetails(pokemon, callback) {
-  const filter = ({ name }) => name === pokemon
+  const filter = ({ name }) => name === pokemon;
   setTimeout(() => {
     if (pokemons.find(filter) === undefined) {
       return callback(new Error('Não temos esse pokémon para você :('), null);
     }
-    const pokemon = pokemons.find(filter);
-
-    const { name, type, ability } = pokemon;
+    const { name, type, ability } = pokemons.find(filter);
 
     const messageFromProfOak = `Olá, seu pokémon é o ${name}, o tipo dele é ${type} e a habilidade principal dele é ${ability}`;
 
@@ -34,11 +32,10 @@ function getPokemonDetails(pokemon, callback) {
 
 getPokemonDetails('Bulbasaur', (err, pokemonInfo) => {
   try {
-    if (err) throw new Error(err)
-    console.log(pokemonInfo)
+    if (err) throw new Error(err);
+    console.log(pokemonInfo);
   } catch (error) {
-    console.error(error)
-    
+    console.error(error);
   }
 });
 
