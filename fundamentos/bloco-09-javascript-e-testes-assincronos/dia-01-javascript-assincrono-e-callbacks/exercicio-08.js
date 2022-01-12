@@ -33,7 +33,13 @@ function getPokemonDetails(pokemon, callback) {
 }
 
 getPokemonDetails('Bulbasaur', (err, pokemonInfo) => {
-  console.log(pokemonInfo)
+  try {
+    if (err) throw new Error(err)
+    console.log(pokemonInfo)
+  } catch (error) {
+    console.error(error)
+    
+  }
 });
 
 module.exports = {
