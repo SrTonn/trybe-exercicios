@@ -1,0 +1,21 @@
+{
+  "env": {
+    "es2020": true
+  },
+  "extends": "airbnb-base",
+  "rules": {
+    "max-len": ["error", { "code": 100 }],
+    "consistent-return": "warn",
+    "max-lines": "off",
+    "max-params": "off",
+    "linebreak-style": "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "none",
+        "vars": "local",
+        "varsIgnorePattern": "data"
+      }
+    ]
+  }
+}
