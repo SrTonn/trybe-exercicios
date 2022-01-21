@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './Header.jsx'
 import Content from './Content.jsx'
@@ -8,6 +7,9 @@ function App() {
     <>
       <Header/>
       <Content/>
+      <footer className='footer'>
+        VQV
+      </footer>
     </>
   );
 }
