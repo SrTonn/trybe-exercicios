@@ -1,0 +1,9 @@
+.header, .footer {
+  text-align: center;
+}
+
+.footer {
+  font-weight: 700;
+  font-size: large;
+  margin: 15px;
+}
