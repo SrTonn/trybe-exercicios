@@ -14,5 +14,5 @@ const fetchJoke = () => {
 
 window.onload = async () => {
   const { joke } = await fetchJoke();
-  document.querySelector('h1').innerText = joke;
+  document.querySelector('h2').innerText = joke;
 };
