@@ -27,6 +27,7 @@ class Pokemon extends React.Component {
 Pokemon.propTypes = {
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
+  weight: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
 }
 
