@@ -88,7 +88,7 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 - [x] 9-1: _JavaScript Assíncrono e Callbacks_
 - [ ] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
 - [ ] 9-3: _Jest - Testes Assíncronos_
-- [ ] 9-4: _[Projeto - Carrinho de Compras]()_
+- [x] 9-4: _[Projeto - Carrinho de Compras](https://github.com/SrTonn/Project-Shopping-Cart)_
 
 <div align="center">
   <h2>Desenvolvimento Front-end :hourglass_flowing_sand:</h2>
@@ -160,7 +160,7 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 - [ ] 19-1: _Introdução - Bancos de dados relacionais_
 - [ ] 19-1: _Banco de dados SQL_
 - [ ] 19-2: _Encontrando dados em um banco de dados_
-- [ ] 19-3: _Filtrando dados de forma especí­fica_
+- [ ] 19-3: _Filtrando dados de forma específica_
 - [ ] 19-4: _Manipulando tabelas_
 - [ ] 19-5: _[Projeto - All For One]()_
 
