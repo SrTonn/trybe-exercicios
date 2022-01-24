@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: teal;
+}
+
+#root {
+  padding: 0 2vw;
+}
+
+h1 {
+  text-align: center;
+  padding: 15px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px calc((100% - (360px * 3)) / 2);
+  overflow-x: hidden;
+  gap: 10px;
+}
+
+.pokemon-card {
+  display: flex;
+  justify-content: space-around;
+
+  width: 45vw;
+  max-width: 350px;
+  min-width: 300px;
+  padding: 5px;
+  line-height: 25px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.pokemon-card p {
+  text-align: center;
+}
