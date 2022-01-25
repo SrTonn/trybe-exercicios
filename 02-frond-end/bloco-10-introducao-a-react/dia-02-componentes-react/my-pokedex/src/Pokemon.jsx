@@ -11,11 +11,9 @@ class Pokemon extends React.Component {
 
     return(
       <div className='pokemon-card'>
+        <p>{name}</p>
+        <p>{type}</p>
         <p>
-          {name}
-          <br />
-          {type}
-          <br />
           Average weight: {weight}
         </p>
         <img src={image} alt={`pokemon ${name}`} />
