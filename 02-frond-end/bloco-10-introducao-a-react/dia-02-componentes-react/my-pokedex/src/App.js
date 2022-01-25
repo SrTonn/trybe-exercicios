@@ -7,12 +7,12 @@ function App() {
     <>
       <h1>Pokedex</h1>
       <div className='container'>
-        {data.map((pokemon) =>
+        {data.map(({name, type, averageWeight: { value, measurementUnit }, image }) =>
           <Pokemon
-            name={pokemon.name}
-            type={pokemon.type}
-            weight={pokemon.averageWeight.value + ' kg'}
-            image={pokemon.image}
+            name={name}
+            type={type}
+            weight={`${value} ${measurementUnit}`}
+            image={image}
           />
         )}
       </div>
