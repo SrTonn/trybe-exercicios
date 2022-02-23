@@ -11,6 +11,8 @@
     "max-lines": "off",
     "max-params": "off",
     "linebreak-style": "off",
+    "default-param-last": "off",
+    "no-shadow": "off",
     "no-unused-vars": [
       "error",
       {
