@@ -14,6 +14,12 @@ const ESTADO_INICIAL_2 = {
 
 const meuPrimeiroReducer = (state = ESTADO_INICIAL_1, action) => {
   switch (action.type) {
+    case 'CHANGE_STATE1':
+      return {
+        ...state,
+        nome: action.nome,
+        sobrenome: action.sobrenome,
+      };
     default:
       return state;
   }
@@ -21,7 +27,41 @@ const meuPrimeiroReducer = (state = ESTADO_INICIAL_1, action) => {
 
 const meuSegundoReducer = (state = ESTADO_INICIAL_2, action) => {
   switch (action.type) {
+    case 'CHANGE_STATE2':
+      return {
+        ...state,
+        nome: action.nome,
+        sobrenome: action.sobrenome,
+      };
     default:
       return state;
   }
 };
+
+const rootReducer = Redux.combineReducers({ meuPrimeiroReducer, meuSegundoReducer });
+const store = Redux.createStore(rootReducer);
+
+console.log(store.getState());
+window.onload = () => {
+  setTimeout(() => {
+    store.dispatch({
+      type: 'CHANGE_STATE1',
+      nome: 'Bruna',
+      sobrenome: 'Santana Oliveira',
+    });
+    store.dispatch({
+      type: 'CHANGE_STATE2',
+      nome: 'Rodrigo',
+      sobrenome: 'Santos da Silva',
+    });
+  }, 2000);
+};
+
+store.subscribe(() => {
+  const { meuPrimeiroReducer, meuSegundoReducer } = store.getState();
+  document.getElementById('nome-1').innerHTML = meuPrimeiroReducer.nome;
+  document.getElementById('sobrenome-1').innerHTML = meuPrimeiroReducer.sobrenome;
+
+  document.getElementById('nome-2').innerHTML = meuSegundoReducer.nome;
+  document.getElementById('sobrenome-2').innerHTML = meuSegundoReducer.sobrenome;
+});
